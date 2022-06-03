@@ -1,0 +1,7 @@
+{
+  "name": "hungrymenu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
