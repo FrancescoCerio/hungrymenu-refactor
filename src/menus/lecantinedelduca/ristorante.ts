@@ -1,23 +1,24 @@
+import { Section } from 'src/models/section';
+
 /* eslint-disable max-len */
-import { Component, ViewChild } from '@angular/core';
-
-
-@Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
-})
-export class AppComponent {
-
-
-  public appPages = [
-    { title: 'Antipasti', url: 'antipasti', icon: 'mail',
+export const restaurantMenu: Section[] = [
+  {
+    title: 'Hamburger',
+    url: 'hamburger',
+    icon: 'burger.png',
+    images:['lecantinedelduca/ristorante/hamburger-01.png','lecantinedelduca/ristorante/hamburger-02.png'],
+  },
+  {
+    title: 'Antipasti',
+    url: 'antipasti',
+    icon: 'antipasti.png',
     dishes: [
       {name: 'Tagliere del Duca', description: '(consigliato per 2 persone)', price: '16,00'},
       {name: 'Tagliere di salumi', description: '(consigliato per 2 persone)', price: '12,00'},
       {name: 'Selezione di Formaggi', description: '(consigliato per 2 persone)', price: '10,00'},
-    ] },
-    { title: 'Secondi', url: 'secondi', icon: 'paper-plane',
+    ]
+  },
+    { title: 'Secondi', url: 'secondi', icon: 'secondi.png',
     dishes: [
       {name: 'Straccetti di vitello al balsamico con rucola e scaglie', description: '', price: '10,00'},
       {name: 'Tagliata tricolore ca. 300g', description: 'Rucola, pomodorini pachino, scaglie di grana', price: '15,00'},
@@ -27,7 +28,7 @@ export class AppComponent {
       {name: 'Filetto di vitellino ca.220g sale e rosmarino con patatine dippers', description: '', price: '18,00'},
       {name: 'Caciocavallo arrosto miele e noci', description: '', price: '7,00'},
     ]  },
-    { title: 'Contorni', url: 'contorni', icon: 'heart',
+    { title: 'Contorni', url: 'contorni', icon: 'contorni.png',
     dishes: [
       {name: 'Contorni del giorno', description: '', price: '3,00'},
       {name: 'Patatine fritte dippers**', description: '', price: '2,50'},
@@ -49,7 +50,7 @@ export class AppComponent {
       '*** All\'occorrenza il prodotto potrebbe essere congelato'
     ]
    },
-    { title: 'Insalate', url: 'insalate', icon: 'archive',
+    { title: 'Insalate', url: 'insalate', icon: 'salad.png',
     dishes: [
       {name: 'Insalata mista piccola', description: '', price: '3,00'},
       {name: 'Insalatona mista grande', description: '', price: '4,50'},
@@ -57,7 +58,7 @@ export class AppComponent {
       {name: 'Insalatona di tonno', description: 'Insalata verde, rucola, radicchio, pomodorino pachino, tonno, cipolla', price: '6,00'},
       {name: 'Insalatona di straccetti', description: 'Insalata verde, rucola, pomodorino pachino, straccetti di vitello, scaglie di grana', price: '7,50'},
     ], },
-    { title: 'Pinse rosse', url: 'pinse_rosse', icon: 'trash',
+    { title: 'Pinse rosse', url: 'pinse_rosse', icon: 'pizza_slice.png',
     dishes: [
       {name: 'Napoli', description: 'Pomodoro, alici, origano', price: '5,50'},
       {name: 'Marinara', description: 'Pomodoro, origano', price: '4,00'},
@@ -68,7 +69,7 @@ export class AppComponent {
       {name: 'Diavola', description: 'Pomodoro, Fior di latte, salsiccia piccante', price: '6,00'},
       {name: 'Super Diavola', description: 'Pomodoro, Fior di latte, salsiccia piccante, peperoni', price: '7,00'},
     ],  },
-    { title: 'Pinse bianche', url: 'pinse_bianche', icon: 'warning',
+    { title: 'Pinse bianche', url: 'pinse_bianche', icon: 'pizza_slice.png',
     dishes: [
       {name: '4 Formaggi', description: 'Fior di latte, gorgonzola, pecorino, caciocavallo', price: '7,00'},
       {name: 'Americana', description: 'Fior di latte, wrustel, patatine fritte', price: '7,00'},
@@ -82,7 +83,7 @@ export class AppComponent {
       {name: 'Trentina', description: 'Fior di latte, funghi, radicchio, speck', price: '7,00'},
       {name: 'Trevigiana', description: 'Fior di latte, gorgonzola, radicchio, speck', price: '7,00'},
     ], },
-    { title: 'Pinse Speciali', url: 'pinse_speciali', icon: 'warning',
+    { title: 'Pinse Speciali', url: 'pinse_speciali', icon: 'pizza_slice.png',
     dishes: [
       {name: 'Gamberone', description: 'Fior di latte, gamberoni al vapore e caponatina estiva', price: '10,00'},
       {name: 'Affumicata', description: 'Fior di latte, zucchine grattugiate, salmone affumicato', price: '9,00'},
@@ -94,14 +95,14 @@ export class AppComponent {
       {name: 'La Partenopea', description: 'Pinsa bianca condita con pesto di basilico, provola, alici, peperoncino e un filo d’olio extravergine d’oliva completata all’uscita con scorza di limone', price: '7,00'},
       {name: 'Al Centro del Mare', description: 'Una pinsa ripassata al forno con bufala, acciughe del Cantabrico e grattugiata di limone', price: '10,00'},
     ], },
-    { title: 'Birre alla spina', url: 'birre', icon: 'warning',
+    { title: 'Birre alla spina', url: 'birre', icon: 'beer.png',
     dishes: [
       {name: 'Bitburger 0.2cL', description: '', price: '1,50'},
       {name: 'Bitburger 0.3cL', description: '', price: '2,20'},
       {name: 'Bitburger 0.5cL', description: '', price: '3,50'},
       {name: 'Bitburger 1L', description: '', price: '7,00'},
       ], },
-    { title: 'Bevande', url: 'bevande', icon: 'warning',
+    { title: 'Bevande', url: 'bevande', icon: 'drinks.png',
     dishes: [
       {name: 'Acqua San Pellegrino 75cL', description: '', price: '2,00'},
       {name: 'Acqua Panna 75cL', description: '', price: '2,00'},
@@ -111,15 +112,17 @@ export class AppComponent {
       {name: 'Fanta 33cL vetro', description: '', price: '2,00'},
       {name: 'Sprite 33cL vetro', description: '', price: '2,00'},
       ], },
-    { title: 'Caffè e Amari', url: 'caffe', icon: 'warning',
+    { title: 'Caffè e Amari', url: 'caffe', icon: 'coffee.png',
     dishes: [
       {name: 'Caffè', description: '', price: '1,00'},
       {name: 'Amari', description: '', price: '2,50'},
       {name: 'Grappa', description: '', price: '2,50'},
       {name: 'Grappa barricata', description: '', price: '3,50'},
       ] },
-    { title: 'Lista Allergeni', url: 'allergeni', icon: 'warning' },
-  ];
-  constructor() {}
-
-}
+    {
+      title: 'Lista Allergeni',
+      url: 'allergeni',
+      icon: 'info.png',
+      images:['lecantinedelduca/ristorante/allergeni.png'],
+    },
+];

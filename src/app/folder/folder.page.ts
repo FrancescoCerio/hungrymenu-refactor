@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Dish } from 'src/models/dish';
 
 @Component({
   selector: 'app-folder',
@@ -7,6 +8,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
+  @Input() dishes: Dish[];
+  @Input() elements: any[];
+
+
   public folder: string;
 
   constructor(private activatedRoute: ActivatedRoute) { }

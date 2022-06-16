@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons style="justify-content: space-between;">
+      <ion-img src="../../../assets/images/lecantinedelduca/ristorante/logo.png" style="width: 2em; margin-left: 1em;" slot="start"></ion-img>
+      <ion-menu-button slot="end" style=" margin-right: 0.5em;"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-split-pane contentId="main-content" >
+  <ion-menu contentId="main-content" type="overlay" side="end">
+    <ion-content>
+      <ion-list id="inbox-list">
+        <ion-list-header>
+          Le Cantine del Duca</ion-list-header>
+        <ion-note>Ristorante</ion-note>
+
+        <ion-menu-toggle auto-hide="false" *ngFor="let p of restaurantMenu; let i = index">
+
+          <ion-item (click)="scrollToElem(p.url)" >
+            <ion-img slot="start" [src]="'../../../assets/images/lecantinedelduca/ristorante/' + p.icon" style="width: 24px; height: 24px;"></ion-img>
+            <!-- <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon> -->
+            <ion-text><h4>{{ p.title }}</h4></ion-text>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content" [animated]="true">
+
+<ion-content>
+
+  <app-section [sectionList]="restaurantMenu">
+
+  </app-section>
+  <ion-footer >
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-title>
+          Contatti
+        </ion-title>
+      </ion-item-divider>
+
+      <ion-item style="--background: white !important;">
+        <ion-label style="--color:black">
+          Via Salita Chiesa, 86010 Mirabello Sannitico CB
+        </ion-label>
+
+        <a href="tel:393-159-3093">
+          +39 393 159 3093
+        </a>
+      </ion-item>
+    </ion-item-group>
+  </ion-footer>
+</ion-content>
+
+  </ion-router-outlet>
+  <!-- <ion-content [fullscreen]="true"> -->
+    <!-- <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header> -->
+
+
+
+  <!-- </ion-content> -->
+</ion-split-pane>
+
+<!-- <ion-content> -->
+<!-- </ion-content> -->
+</ion-content>

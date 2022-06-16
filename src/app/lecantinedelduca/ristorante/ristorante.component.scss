@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #fff));
+  // --background: var(--ion-item-background, var(--ion-background-color, #fff));
 }
 
 ion-menu.md ion-content {
@@ -42,6 +42,7 @@ ion-menu.md ion-list#labels-list ion-list-header {
 
   min-height: 26px;
 }
+
 
 ion-menu.md ion-item {
   --padding-start: 10px;
