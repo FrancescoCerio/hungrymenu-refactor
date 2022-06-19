@@ -11,7 +11,7 @@ export const restaurantMenu: Section[] = [
   {
     title: 'Antipasti',
     url: 'antipasti',
-    icon: 'antipasti.png',
+    icon: 'starter.png',
     dishes: [
       {name: 'Tagliere del Duca', description: '(consigliato per 2 persone)', price: '16,00'},
       {name: 'Tagliere di salumi', description: '(consigliato per 2 persone)', price: '12,00'},

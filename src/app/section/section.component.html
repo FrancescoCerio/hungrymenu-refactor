@@ -9,9 +9,9 @@
     </ion-item-divider>
 
     <div *ngIf="item.images">
-      <ion-item *ngFor="let img of item.images">
+      <div *ngFor="let img of item.images">
         <ion-img [src]="'../../assets/images/'+img"></ion-img>
-      </ion-item>
+      </div>
     </div>
 
     <div *ngFor="let dish of item.dishes" fxLayout="column" style="padding:1em 1em;">

@@ -4,6 +4,7 @@ import { RistoranteComponent } from './ristorante.component';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { SectionModule } from 'src/app/section/section.module';
+import { FlexModule } from '@angular/flex-layout';
 
 
 
@@ -20,7 +21,7 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     IonicModule,
     CommonModule,
-
+    FlexModule,
     SectionModule,
 
   ],
