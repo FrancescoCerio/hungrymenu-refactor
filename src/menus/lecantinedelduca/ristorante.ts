@@ -33,7 +33,7 @@ export const restaurantMenu: Section[] = [
       {name: 'Contorni del giorno', description: '', price: '3,00'},
       {name: 'Patatine fritte dippers**', description: '', price: '2,50'},
       {name: 'Patate fritte \"Le Cantine\" *', description: '', price: '2,50'},
-      {name: 'Crocchette di patate **', description: '', price: 'cad.€1,00'},
+      {name: 'Crocchette di patate **', description: '', price: 'cad. €1,00', cad:true},
       {name: 'Mozzarelline panate 5 pezzi **', description: '', price: '2,00'},
       {name: 'Olive all\'ascolana 5 pezzi **', description: '', price: '2,00'},
       {name: 'Polpettine di melanzane 4 pezzi**', description: '', price: '2,50'},

@@ -21,9 +21,14 @@
             {{dish.name}}
           </h3>
         </ion-text>
-        <ion-text fxFlex="25" slot="end" color="white">
+        <ion-text fxFlex="25" slot="end" color="white" *ngIf="!dish.cad">
           <h4 style="text-align: center;">
             €{{dish.price}}
+          </h4>
+        </ion-text>
+        <ion-text fxFlex="25" slot="end" color="white" *ngIf="dish.cad">
+          <h4 style="text-align: center;">
+            {{dish.price}}
           </h4>
         </ion-text>
       </div>
@@ -36,6 +41,16 @@
           <h4>
 
           </h4>
+        </ion-text>
+      </div>
+
+    </div>
+
+    <div  *ngIf="item.extraInfo" fxLayout="column" style="padding:1em 1em;">
+      <div *ngFor="let extra of item.extraInfo">
+
+        <ion-text >
+          {{extra}}
         </ion-text>
       </div>
     </div>
