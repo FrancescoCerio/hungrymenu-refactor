@@ -100,7 +100,9 @@ export const restaurantMenu: Section[] = [
       {name: 'Bitburger 0.2cL', description: '', price: '2,00'},
       {name: 'Bitburger 0.3cL', description: '', price: '2,50'},
       {name: 'Bitburger 0.5cL', description: '', price: '4,00'},
-      {name: 'Bitburger 1L', description: '', price: '7,00'},
+      {name: 'Bitburger 1L', description: '', price: '8,00'},
+      {name: 'Köstritzer nera 0.2cL', description: '', price: '2,00'},
+      {name: 'Köstritzer nera 0.3cL', description: '', price: '3,00'},
       ], },
     { title: 'Bevande', url: 'bevande', icon: 'drinks.png',
     dishes: [
