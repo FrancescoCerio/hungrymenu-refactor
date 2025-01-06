@@ -1,6 +1,7 @@
 export type Dish = {
-  name: string;
-  description: string;
-  price: string;
   cad?: boolean;
+  description: string;
+  icon?: string;
+  name: string;
+  price: string;
 };

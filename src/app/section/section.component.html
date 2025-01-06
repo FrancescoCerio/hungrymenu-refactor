@@ -16,11 +16,14 @@
 
     <div *ngFor="let dish of item.dishes" fxLayout="column" style="padding:1em 1em;">
       <div fxLayout="row"  lines="false" style="min-width: 100% !important;">
-        <ion-text fxFlex="75">
-          <h3>
-            {{dish.name}}
-          </h3>
-        </ion-text>
+        <div fxLayout="row" fxFlex="75">
+          <ion-text fxFlex="60">
+            <h3>
+              {{dish.name}}
+            </h3>
+          </ion-text>
+          <ion-img fxFlex="40" slot="start" *ngIf="dish.icon" [src]="'../../assets/images' + dish.icon"></ion-img>
+        </div>
         <ion-text fxFlex="25" slot="end" color="white" *ngIf="!dish.cad">
           <h4 style="text-align: center;">
             €{{dish.price}}
