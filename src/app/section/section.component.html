@@ -17,7 +17,7 @@
     <div *ngFor="let dish of item.dishes" fxLayout="column" style="padding:1em 1em;">
       <div fxLayout="row"  lines="false" style="min-width: 100% !important;">
         <div fxLayout="row" fxFlex="75">
-          <ion-text fxFlex="60">
+          <ion-text [fxFlex]="dish.icon ? 60 : 100">
             <h3>
               {{dish.name}}
             </h3>
