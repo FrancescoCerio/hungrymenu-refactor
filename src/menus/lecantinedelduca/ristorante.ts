@@ -112,7 +112,7 @@ export const restaurantMenu: Section[] = [
     dishes: [
       {name: 'Bitburger 0,3l', icon: '/lecantinedelduca/ristorante/bitburger.png', description: '', price: '3,00'},
       {name: 'Bitburger 0,5l', icon: '/lecantinedelduca/ristorante/bitburger.png', description: '', price: '5,00'},
-      {name: 'Bitburger 1L', icon: '/lecantinedelduca/ristorante/bitburger.png', description: '', price: '10,00'},
+      {name: 'Bitburger 1l', icon: '/lecantinedelduca/ristorante/bitburger.png', description: '', price: '10,00'},
       {name: 'Crew Republic 0,3l', icon: '/lecantinedelduca/ristorante/crew.png', description: 'Birra rossa', price: '3,50'},
       {name: 'Köstritzer nera 0,3l', icon: '/lecantinedelduca/ristorante/kostrizer.png', description: '', price: '3,50'},
       {name: 'Lupulus Blanche 0,3l', icon: '/lecantinedelduca/ristorante/lupulus.webp', description: 'Birra bianca', price: '3,50'},
@@ -121,7 +121,7 @@ export const restaurantMenu: Section[] = [
     dishes: [
       {name: 'Acqua Molisia 75cl', description: 'Frizzante', price: '2,00'},
       {name: 'Acqua Molisia 75cl', description: 'Naturale', price: '2,00'},
-      {name: 'Coca Cola 1L', description: '', price: '5,00'},
+      {name: 'Coca Cola 1l', description: '', price: '5,00'},
       {name: 'Coca Cola 33cl vetro', description: '', price: '2,50'},
       {name: 'Fanta 33cl vetro', description: '', price: '2,50'},
       {name: 'Sprite 33cl vetro', description: '', price: '2,50'},
