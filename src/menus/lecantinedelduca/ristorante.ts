@@ -15,6 +15,7 @@ export const restaurantMenu: Section[] = [
     dishes: [
       {name: 'Pallotte cacio e ova', description: '3 pz', price: '6,00'},
       {name: 'Pizza e minestra', description: '', price: '7,00'},
+      {name: 'Parmigiana estiva', description: 'Melanzana fritta, mozzarella di bufala, pomodoro e pesto di basilico homemade', price: '8,00'},
       {name: 'Selezione di Formaggi', description: '(consigliato per 2 persone)', price: '12,00'},
       {name: 'Tagliere del Duca', description: 'Tagliere accompagnato da antipasti caldi (consigliato per 2 persone)', price: '25,00'},
       {name: 'Tagliere di salumi e formaggi', description: '(consigliato per 2 persone)', price: '18,00'},
@@ -24,9 +25,9 @@ export const restaurantMenu: Section[] = [
   { title: 'Primi', url: 'primi', icon: 'primi.png',
     dishes: [
       {name: 'Cavatello di nonna mia', description: 'Ragù cotto a fuoco lento per 24h', price: '9,00'},
+      {name: 'Garganelli Primavera', description: 'Datterino giallo, stracciata e basilico', price: '10,00'},
       {name: 'Mezze zite allo scarpariello', description: '', price: '9,00'},
-      {name: 'Ravioli al radicchio con fonduta di gorgonzola e speck croccante', description: '', price: '10,00'},
-      {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, spigatelli e crumble di guanciale', price: '10,00'},
+      {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, asparagi e crumble di guanciale', price: '10,00'},
       {name: 'Tortello al capriolo con fungo porcino', description: '', price: '10,00'},
     ]  },
     { title: 'Secondi', url: 'secondi', icon: 'secondi.png',
@@ -116,6 +117,9 @@ export const restaurantMenu: Section[] = [
       {name: 'Crew Republic 0,3l', icon: '/lecantinedelduca/ristorante/crew.png', description: 'Birra rossa', price: '3,50'},
       {name: 'Köstritzer nera 0,3l', icon: '/lecantinedelduca/ristorante/kostrizer.png', description: '', price: '3,50'},
       {name: 'Lupulus Blanche 0,3l', icon: '/lecantinedelduca/ristorante/lupulus.webp', description: 'Birra bianca', price: '3,50'},
+      {name: 'Lupulus IPA 0,25l', icon: '/lecantinedelduca/ristorante/lupulus.webp', description: 'Birra chiara', price: '3,50'},
+      {name: 'Schneider weiss 0,3l', icon: '/lecantinedelduca/ristorante/schneider_weisse.png', description: '', price: '3,50'},
+      {name: 'Schneider weiss 0,5l', icon: '/lecantinedelduca/ristorante/schneider_weisse.png', description: '', price: '5,50'},
       ], },
     { title: 'Bevande', url: 'bevande', icon: 'drinks.png',
     dishes: [
