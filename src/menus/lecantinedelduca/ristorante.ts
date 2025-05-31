@@ -28,7 +28,6 @@ export const restaurantMenu: Section[] = [
       {name: 'Garganelli Primavera', description: 'Datterino giallo, stracciata e basilico', price: '10,00'},
       {name: 'Mezze zite allo scarpariello', description: '', price: '9,00'},
       {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, asparagi e crumble di guanciale', price: '10,00'},
-      {name: 'Tortello al capriolo con fungo porcino', description: '', price: '10,00'},
     ]  },
     { title: 'Secondi', url: 'secondi', icon: 'secondi.png',
     dishes: [
@@ -73,7 +72,7 @@ export const restaurantMenu: Section[] = [
     dishes: [
       {name: 'Margherita', description: 'Pomodoro, Fior di latte, basilico', price: '6,00'},
       {name: 'Campagnola', description: 'Pomodoro, Fior di latte, fagioli, guanciale, prezzemolo', price: '9,00'},
-      {name: 'Capricciosa', description: 'Pomodoro, Fior di latte, funghi, carciofi, prosciutto cotto, olive', price: '8,00'},
+      {name: 'Capricciosa', description: 'Pomodoro, Fior di latte, funghi, carciofi, prosciutto cotto, olive', price: '9,00'},
       {name: 'Diavola', description: 'Pomodoro, Fior di latte, salsiccia piccante', price: '7,50'},
       {name: 'Funghi', description: 'Pomodoro, Fior di latte, funghi', price: '7,50'},
       {name: 'Marinara', description: 'Pomodoro, origano', price: '5,50'},
@@ -85,7 +84,7 @@ export const restaurantMenu: Section[] = [
     ],  },
     { title: 'Pizze bianche', url: 'pizze_bianche', icon: 'pizza_slice.png',
     dishes: [
-      {name: '4 Formaggi', description: 'Fior di latte, gorgonzola, pecorino, caciocavallo', price: '8,00'},
+      {name: '4 Formaggi', description: 'Fior di latte, gorgonzola, pecorino, caciocavallo', price: '9,00'},
       {name: 'Americana', description: 'Fior di latte, wrustel, patatine fritte', price: '8,00'},
       {name: 'Carbonara', description: 'Fior di latte, guanciale, pecorino, uovo, pepe nero', price: '8,50'},
       {name: 'Crostino', description: 'Pizza con crudo dentro e sopra rucola e pomodorini', price: '9,00'},
