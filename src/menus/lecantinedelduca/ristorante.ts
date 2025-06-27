@@ -27,7 +27,7 @@ export const restaurantMenu: Section[] = [
       {name: 'Cavatello di nonna mia', description: 'Ragù cotto a fuoco lento per 24h', price: '9,00'},
       {name: 'Garganelli Primavera', description: 'Datterino giallo, stracciata e basilico', price: '10,00'},
       {name: 'Mezze zite allo scarpariello', description: '', price: '9,00'},
-      {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, asparagi e crumble di guanciale', price: '10,00'},
+      {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, zucchine e crumble di guanciale', price: '10,00'},
     ]  },
     { title: 'Secondi', url: 'secondi', icon: 'secondi.png',
     dishes: [
