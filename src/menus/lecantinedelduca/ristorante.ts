@@ -27,7 +27,7 @@ export const restaurantMenu: Section[] = [
     dishes: [
       {name: 'Pallotte cacio e ova', description: '3 pz', price: '6,00'},
       {name: 'Pizza e minestra', description: '', price: '7,00'},
-      {name: 'Scarola e fagioli', description: 'Melanzana fritta, mozzarella di bufala, pomodoro e pesto di basilico homemade', price: '7,00'},
+      {name: 'Scarola e fagioli', description: '', price: '7,00'},
       {name: 'Selezione di Formaggi', description: '(consigliato per 2 persone)', price: '12,00'},
       {name: 'Tagliere del Duca', description: 'Tagliere accompagnato da antipasti caldi (consigliato per 2 persone)', price: '25,00'},
       {name: 'Tagliere di salumi e formaggi', description: '(consigliato per 2 persone)', price: '18,00'},
