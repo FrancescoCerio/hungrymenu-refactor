@@ -37,9 +37,9 @@ export const restaurantMenu: Section[] = [
   { title: 'Primi', url: 'primi', icon: 'primi.png',
     dishes: [
       {name: 'Cavatello di nonna mia', description: 'Ragù cotto a fuoco lento per 24h', price: '9,00'},
-      {name: 'Taccozze crema di zucca e scaglie di gorgonzola stagionato', description: '', price: '10,00'},
+      {name: 'Pantacce crema di fagioli e cotechino', description: '', price: '10,00'},
       {name: 'Mezze zite allo scarpariello', description: '', price: '9,00'},
-      {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, broccolo e crumble di guanciale', price: '10,00'},
+      {name: 'Tonnarello del Duca', description: 'Fonduta di caciocavallo, spigatelli e crumble di guanciale', price: '10,00'},
     ]  },
     { title: 'Secondi', url: 'secondi', icon: 'secondi.png',
     dishes: [
