@@ -14,33 +14,33 @@
       </div>
     </div>
 
-    <div *ngFor="let dish of item.dishes" fxLayout="column" style="padding:1em 1em;">
-      <div fxLayout="row"  lines="false" style="min-width: 100% !important;">
-        <div fxLayout="row" fxFlex="75">
-          <ion-text [fxFlex]="dish.icon ? 60 : 100">
+    <div *ngFor="let dish of item.dishes" class="flex-column" style="padding:1em 1em;">
+      <div class="flex-row"  lines="false" style="min-width: 100% !important;">
+        <div class="flex-row flex-75">
+          <ion-text [ngClass]="dish.icon ? 'flex-60' : 'flex-100'">
             <h3>
               {{dish.name}}
             </h3>
           </ion-text>
-          <ion-img fxFlex="40" slot="start" *ngIf="dish.icon" [src]="'../../assets/images' + dish.icon"></ion-img>
+          <ion-img class="flex-40" slot="start" *ngIf="dish.icon" [src]="'../../assets/images' + dish.icon"></ion-img>
         </div>
-        <ion-text fxFlex="25" slot="end" color="white" *ngIf="!dish.cad">
+        <ion-text class="flex-25" slot="end" color="white" *ngIf="!dish.cad">
           <h4 style="text-align: center;">
             €{{dish.price}}
           </h4>
         </ion-text>
-        <ion-text fxFlex="25" slot="end" color="white" *ngIf="dish.cad">
+        <ion-text class="flex-25" slot="end" color="white" *ngIf="dish.cad">
           <h4 style="text-align: center;">
             {{dish.price}}
           </h4>
         </ion-text>
       </div>
 
-      <div fxFlex="70" fxLayout="row"  *ngIf="dish.description">
+      <div class="flex-70 flex-row"  *ngIf="dish.description">
         <ion-text >
           {{dish.description}}
         </ion-text>
-        <ion-text fxFlex="30" slot="end" color="white">
+        <ion-text class="flex-30" slot="end" color="white">
           <h4>
 
           </h4>
@@ -49,7 +49,7 @@
 
     </div>
 
-    <div  *ngIf="item.extraInfo" fxLayout="column" style="padding:1em 1em;">
+    <div  *ngIf="item.extraInfo" class="flex-column" style="padding:1em 1em;">
       <div *ngFor="let extra of item.extraInfo">
 
         <ion-text >

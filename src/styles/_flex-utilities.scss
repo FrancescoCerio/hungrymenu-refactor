@@ -1,0 +1,19 @@
+// Flex containers
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Flex children with fixed percentages
+.flex-25 { flex: 0 0 25%; }
+.flex-30 { flex: 0 0 30%; }
+.flex-40 { flex: 0 0 40%; }
+.flex-60 { flex: 0 0 60%; }
+.flex-70 { flex: 0 0 70%; }
+.flex-75 { flex: 0 0 75%; }
+.flex-100 { flex: 0 0 100%; }
