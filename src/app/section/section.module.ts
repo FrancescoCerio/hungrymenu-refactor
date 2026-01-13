@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SectionComponent } from './section.component';
 import { IonicModule } from '@ionic/angular';
 import { DishModule } from '../dish/dish.module';
-import { FlexModule } from '@angular/flex-layout';
 
 
 
@@ -13,8 +12,7 @@ import { FlexModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     IonicModule,
-    DishModule,
-    FlexModule
+    DishModule
   ],
   exports: [SectionComponent],
   bootstrap: [SectionComponent]
