@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-lecantinedelduca',
   templateUrl: './lecantinedelduca.component.html',
   styleUrls: ['./lecantinedelduca.component.scss'],
 })
-export class LecantinedelducaComponent implements OnInit {
+export class LecantinedelducaComponent {
 
   constructor() { }
-
-  ngOnInit() {}
 
 }
