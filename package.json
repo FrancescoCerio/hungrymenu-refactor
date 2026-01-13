@@ -13,7 +13,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cdk": "~14.2.0",
+    "@angular/cdk": "~16.2.14",
     "@angular/common": "~16.2.12",
     "@angular/core": "~16.2.12",
     "@angular/forms": "~16.2.12",
@@ -32,10 +32,10 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~16.2.16",
-    "@angular-eslint/builder": "~14.0.0",
-    "@angular-eslint/eslint-plugin": "~14.0.0",
+    "@angular-eslint/builder": "~16.3.1",
+    "@angular-eslint/eslint-plugin": "~16.3.1",
     "@angular-eslint/eslint-plugin-template": "~14.0.0",
-    "@angular-eslint/template-parser": "~14.0.0",
+    "@angular-eslint/template-parser": "~16.3.1",
     "@angular/cli": "~16.2.16",
     "@angular/compiler": "~16.2.12",
     "@angular/compiler-cli": "~16.2.12",
