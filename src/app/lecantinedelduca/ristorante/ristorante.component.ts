@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { restaurantMenu } from 'src/menus/lecantinedelduca/ristorante';
 import { Section } from 'src/models/section';
 @Component({
@@ -6,11 +6,9 @@ import { Section } from 'src/models/section';
   templateUrl: './ristorante.component.html',
   styleUrls: ['./ristorante.component.scss'],
 })
-export class RistoranteComponent implements OnInit {
+export class RistoranteComponent {
   restaurantMenu: Section[] = restaurantMenu;
   constructor() { }
-
-  ngOnInit() {}
 
 
   scrollToElem(tag: string){

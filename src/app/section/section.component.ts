@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { Section } from 'src/models/section';
 
@@ -7,7 +7,7 @@ import { Section } from 'src/models/section';
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.scss'],
 })
-export class SectionComponent implements OnInit {
+export class SectionComponent {
 
   @Input() title: string;
   @Input() sectionList: Section[];
@@ -15,7 +15,5 @@ export class SectionComponent implements OnInit {
   constructor() {
 
    }
-
-  ngOnInit() {}
 
 }

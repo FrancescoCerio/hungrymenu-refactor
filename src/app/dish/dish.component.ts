@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Dish } from 'src/models/dish';
 
 @Component({
@@ -6,10 +6,8 @@ import { Dish } from 'src/models/dish';
   templateUrl: './dish.component.html',
   styleUrls: ['./dish.component.scss'],
 })
-export class DishComponent implements OnInit {
+export class DishComponent {
   @Input() dish: Dish;
   constructor() { }
-
-  ngOnInit() {}
 
 }
