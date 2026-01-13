@@ -3,9 +3,10 @@ import { ActivatedRoute } from '@angular/router';
 import { Dish } from 'src/models/dish';
 
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+    selector: 'app-folder',
+    templateUrl: './folder.page.html',
+    styleUrls: ['./folder.page.scss'],
+    standalone: false
 })
 export class FolderPage implements OnInit {
   @Input() dishes: Dish[];
