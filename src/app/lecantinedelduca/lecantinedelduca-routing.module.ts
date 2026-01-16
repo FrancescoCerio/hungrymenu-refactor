@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { LecantinedelducaComponent } from './lecantinedelduca.component';
-import { RistoranteComponent } from './ristorante/ristorante.component';
-import { GelateriaComponent } from './gelateria/gelateria.component';
 
 const routes: Routes = [
   {

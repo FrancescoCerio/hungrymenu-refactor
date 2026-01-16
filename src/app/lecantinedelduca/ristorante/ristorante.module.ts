@@ -5,8 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { SectionModule } from 'src/app/section/section.module';
 
-
-
 const routes: Routes = [
   {
     path: '',
