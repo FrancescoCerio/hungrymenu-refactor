@@ -4,14 +4,22 @@ import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { addIcons } from 'ionicons';
-import { map, call, menu, menuOutline, menuSharp, close, closeOutline, closeSharp } from 'ionicons/icons';
+import {
+  map, call, menu, menuOutline, menuSharp, close, closeOutline, closeSharp,
+  restaurant, restaurantOutline, chevronDownOutline, phonePortraitOutline,
+  flashOutline, leafOutline, arrowForwardOutline
+} from 'ionicons/icons';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SectionModule } from './section/section.module';
 
 // Register icons globally for Ionic 8 + Vite
-addIcons({ map, call, menu, menuOutline, menuSharp, close, closeOutline, closeSharp });
+addIcons({
+  map, call, menu, menuOutline, menuSharp, close, closeOutline, closeSharp,
+  restaurant, restaurantOutline, chevronDownOutline, phonePortraitOutline,
+  flashOutline, leafOutline, arrowForwardOutline
+});
 
 
 @NgModule({
