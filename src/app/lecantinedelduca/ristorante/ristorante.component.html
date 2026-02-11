@@ -17,13 +17,22 @@
           Le Cantine del Duca</ion-list-header>
           <ion-note>Ristorante</ion-note>
 
-          @for (p of restaurantMenu; track p; let i = $index) {
-            <ion-menu-toggle auto-hide="false">
-              <ion-item (click)="scrollToElem(p.url)" >
-                <ion-img slot="start" [src]="'../../../assets/images/lecantinedelduca/ristorante/' + p.icon" style="width: 24px; height: 24px;"></ion-img>
-                <ion-text><h4>{{ p.title }}</h4></ion-text>
+          @if (loading) {
+            @for (i of [1,2,3,4,5]; track i) {
+              <ion-item>
+                <ion-skeleton-text [animated]="true" slot="start" style="width: 24px; height: 24px; border-radius: 4px;"></ion-skeleton-text>
+                <ion-skeleton-text [animated]="true" style="width: 60%; height: 1em; border-radius: 4px;"></ion-skeleton-text>
               </ion-item>
-            </ion-menu-toggle>
+            }
+          } @else {
+            @for (p of restaurantMenu; track p; let i = $index) {
+              <ion-menu-toggle auto-hide="false">
+                <ion-item (click)="scrollToElem(p.url)" >
+                  <ion-img slot="start" [src]="p.icon" style="width: 24px; height: 24px;"></ion-img>
+                  <ion-text><h4>{{ p.title }}</h4></ion-text>
+                </ion-item>
+              </ion-menu-toggle>
+            }
           }
         </ion-list>
 
@@ -33,9 +42,11 @@
 
       <ion-content>
 
-        <app-section [sectionList]="restaurantMenu">
-
-        </app-section>
+        @if (loading) {
+          <app-menu-skeleton></app-menu-skeleton>
+        } @else {
+          <app-section [sectionList]="restaurantMenu"></app-section>
+        }
         <ion-footer style="--background: white !important;">
           <ion-item-group>
       <ion-item-divider style="background-color: white;
