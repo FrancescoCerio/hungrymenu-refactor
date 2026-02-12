@@ -11,9 +11,5 @@ const content = `export const environment = {
 };
 `;
 
-const targetFile = isProduction
-  ? 'src/environments/environment.prod.ts'
-  : 'src/environments/environment.ts';
-
-fs.writeFileSync(targetFile, content);
-console.log(`${targetFile} generated from env variables (${process.env.VERCEL_ENV})`);
+fs.writeFileSync('src/environments/environment.prod.ts', content);
+console.log(`environment.prod.ts generated from env variables (VERCEL_ENV=${process.env.VERCEL_ENV})`);
