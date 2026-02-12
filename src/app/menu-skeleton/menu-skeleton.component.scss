@@ -1,0 +1,38 @@
+.skeleton-dish {
+  padding: 1em;
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    flex: 0 0 65%;
+
+    ion-skeleton-text {
+      width: 80%;
+      height: 1.1em;
+    }
+  }
+
+  &__price {
+    flex: 0 0 25%;
+    margin-left: auto;
+    text-align: center;
+
+    ion-skeleton-text {
+      width: 50%;
+      height: 1.1em;
+      margin: 0 auto;
+    }
+  }
+
+  &__desc {
+    margin-top: 0.4em;
+
+    ion-skeleton-text {
+      width: 45%;
+      height: 0.85em;
+    }
+  }
+}

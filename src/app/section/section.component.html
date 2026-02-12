@@ -12,7 +12,7 @@
       <div>
         @for (img of item.images; track img) {
           <div>
-            <ion-img [src]="'../../assets/images/'+img"></ion-img>
+            <ion-img [src]="img"></ion-img>
           </div>
         }
       </div>
@@ -27,7 +27,7 @@
               </h3>
             </ion-text>
             @if (dish.icon) {
-              <ion-img class="flex-40" slot="start" [src]="'../../assets/images' + dish.icon"></ion-img>
+              <ion-img class="flex-40" slot="start" [src]="dish.icon"></ion-img>
             }
           </div>
           @if (!dish.cad) {
