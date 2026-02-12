@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/set-env.js && npm run build -- --configuration $VERCEL_ENV",
+  "buildCommand": "node scripts/set-env.js && npm run build -- --configuration production",
   "outputDirectory": "www/browser",
   "rewrites": [
     {
