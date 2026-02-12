@@ -18,6 +18,9 @@
     ],
     "useDefineForClassFields": false
   },
+  "exclude": [
+    "api"
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
