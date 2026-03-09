@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { SectionModule } from 'src/app/section/section.module';
 import { MenuSkeletonModule } from 'src/app/menu-skeleton/menu-skeleton.module';
+import { LucideAngularModule, icons } from 'lucide-angular'
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
     CommonModule,
     SectionModule,
     MenuSkeletonModule,
+    LucideAngularModule.pick(icons),
   ],
 
 })

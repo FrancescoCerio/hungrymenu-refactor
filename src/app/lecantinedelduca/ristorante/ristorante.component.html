@@ -28,7 +28,7 @@
             @for (p of restaurantMenu; track p; let i = $index) {
               <ion-menu-toggle auto-hide="false">
                 <ion-item (click)="scrollToElem(p.url)" >
-                  <ion-img slot="start" [src]="p.icon" style="width: 24px; height: 24px;"></ion-img>
+                  <lucide-icon [name]="p.icon" color="white" slot="start" strokeWidth="2" style="width: 24px; height: 24px;"></lucide-icon>
                   <ion-text><h4>{{ p.title }}</h4></ion-text>
                 </ion-item>
               </ion-menu-toggle>

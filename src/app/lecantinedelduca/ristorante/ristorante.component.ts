@@ -6,7 +6,7 @@ import { SupabaseService } from 'src/app/services/supabase.service';
     selector: 'app-ristorante',
     templateUrl: './ristorante.component.html',
     styleUrls: ['./ristorante.component.scss'],
-    standalone: false
+    standalone: false,
 })
 export class RistoranteComponent implements OnInit {
   restaurantMenu: Section[] = [];

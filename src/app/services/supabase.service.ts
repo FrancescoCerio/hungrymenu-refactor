@@ -63,6 +63,8 @@ export class SupabaseService {
       .eq('slug', menuSlug)
       .eq('restaurants.slug', restaurantSlug)
       .eq('visible', true)
+      .order('sort_order', { referencedTable: 'sections' })
+      .order('sort_order', { referencedTable: 'sections.dishes' })
       .single();
 
     return from(query).pipe(
