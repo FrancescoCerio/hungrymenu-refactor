@@ -12,6 +12,7 @@ interface DbDish {
   description: string;
   price: string;
   icon: string | null;
+  image_url: string | null;
   cad: boolean;
   meal_time: MealTime;
 }
@@ -54,6 +55,7 @@ export class SupabaseService {
             description,
             price,
             icon,
+            image_url,
             cad,
             meal_time,
             sort_order
@@ -102,6 +104,7 @@ export class SupabaseService {
               price: d.price,
             };
             if (d.icon) dish.icon = d.icon;
+            if (d.image_url) dish.image_url = d.image_url;
             if (d.cad) dish.cad = true;
             return dish;
           });

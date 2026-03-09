@@ -26,8 +26,8 @@
                 {{dish.name}}
               </h3>
             </ion-text>
-            @if (dish.icon) {
-              <ion-img class="flex-40" slot="start" [src]="dish.icon"></ion-img>
+            @if (dish.image_url) {
+              <ion-img class="flex-40" slot="start" [src]="dish.image_url"></ion-img>
             }
           </div>
           @if (!dish.cad) {
@@ -40,7 +40,7 @@
           @if (dish.cad) {
             <ion-text class="flex-25" slot="end" color="white">
               <h4 style="text-align: center;">
-                {{dish.price}}
+                cad. €{{dish.price}}
               </h4>
             </ion-text>
           }

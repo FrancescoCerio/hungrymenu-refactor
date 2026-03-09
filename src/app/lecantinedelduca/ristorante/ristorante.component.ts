@@ -17,6 +17,7 @@ export class RistoranteComponent implements OnInit {
   ngOnInit(): void {
     this.supabaseService.getMenu('lecantinedelduca', 'ristorante').subscribe({
       next: (sections) => {
+        console.log(sections)
         this.restaurantMenu = sections;
         this.loading = false;
       },
