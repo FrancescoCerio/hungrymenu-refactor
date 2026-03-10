@@ -1,10 +1,10 @@
 import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { inject } from '@vercel/analytics';
 import { injectSpeedInsights } from '@vercel/speed-insights';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+import { platformBrowser } from '@angular/platform-browser'
 
 if (environment.production) {
   enableProdMode();
@@ -14,5 +14,5 @@ if (environment.production) {
 inject();
 injectSpeedInsights();
 
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowser().bootstrapModule(AppModule)
   .catch(err => console.log(err));

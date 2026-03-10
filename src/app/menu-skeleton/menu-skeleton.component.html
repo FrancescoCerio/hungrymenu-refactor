@@ -1,0 +1,29 @@
+@for (s of sections; track $index) {
+  <ion-item-group>
+    <!-- Section header -->
+    <ion-item-divider sticky style="border-bottom-color: #3b3b3b">
+      <div style="width: 100%; text-align: center; padding: 0.6em 0;">
+        <ion-skeleton-text [animated]="true" style="width: 40%; height: 1.4em; margin: 0 auto; border-radius: 4px;"></ion-skeleton-text>
+      </div>
+    </ion-item-divider>
+
+    <!-- Dish rows -->
+    @for (d of dishes; track $index) {
+      <div class="skeleton-dish">
+        <div class="skeleton-dish__row">
+          <div class="skeleton-dish__name">
+            <ion-skeleton-text [animated]="true" style="border-radius: 4px;"></ion-skeleton-text>
+          </div>
+          <div class="skeleton-dish__price">
+            <ion-skeleton-text [animated]="true" style="border-radius: 4px;"></ion-skeleton-text>
+          </div>
+        </div>
+        @if ($index % 2 === 0) {
+          <div class="skeleton-dish__desc">
+            <ion-skeleton-text [animated]="true" style="border-radius: 4px;"></ion-skeleton-text>
+          </div>
+        }
+      </div>
+    }
+  </ion-item-group>
+}
